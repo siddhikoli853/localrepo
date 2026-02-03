@@ -291,5 +291,9 @@
 # sys.setrecursionlimit(2000)
 # print(sys.getrecursionlimit())
 
-# 
+# day36,37,38
+# Exception Handling in Python:
+#  link = https://www.w3schools.com/python/python_try_except.asp
+
+
 

@@ -97,3 +97,73 @@
 # Unique Keys: You cannot have two items with the same key. If you add a duplicate key, the old value will be overwritten.
 # Key Types: Keys must be immutable (strings, numbers, or tuples), while values can be anything (lists, other dictionaries, etc.).
 
+# Creating a dictionary for your project
+# user_info = {
+#     "name": "Siddhi",
+#     "role": "Developer",
+#     "repo": "localrepo"
+# }
+
+# # Accessing a value
+# print(user_info["name"])  # Output: Siddhi
+
+# # Adding or Updating
+# user_info["language"] = "Python"  # Adds a new pair
+# user_info["role"] = "Lead Dev"
+
+# Essential Dictionary Methods
+# .get(key)	Returns the value of a key. Doesn't error if key is missing.	user_info.get("age")
+# .keys()	Returns a list of all the keys.	user_info.keys()
+# .values()	Returns a list of all the values.	user_info.values()
+# .items()	Returns a list of tuples (key, value pairs).	user_info.items()
+# .update({k:v})	Updates the dictionary with the specified key-value pairs.	user_info.update({"status": "active"})
+# .pop(key)	Removes the item with the specified key name.	user_info.pop("role")
+
+# 4. Looping Through Dictionaries
+# Because dictionaries have both keys and values, you have three ways to loop:
+
+# Python
+# # Loop through keys
+# for key in user_info:
+#     print(key)
+
+# # Loop through values
+# for val in user_info.values():
+#     print(val)
+
+# # Loop through both (Most common)
+# for key, value in user_info.items():
+
+# Example: Using a dictionary to represent a row in your one.csv
+# row_data = {
+#     "filename": "index.html",
+#     "status": "conflict",
+#     "line_count": 18
+# }
+
+# if row_data["status"] == "conflict":
+#     print(f"Warning: {row_data['filename']} needs a merge fix!")
+
+# day35
+
+# for Loop with else in Python 
+
+# The else block executes only if the loop finishes all its iterations naturally (i.e., it reaches 
+# the end of the sequence). If the loop is stopped prematurely by a break 
+# statement, the else block is skipped entirely.
+
+# files = ["index.html", "main.py", "one.csv", "style.css"]
+# search_file = "readme.md"
+
+# for file in files:
+#     if file == search_file:
+#         print(f"Found it: {file}")
+#         break
+# else:
+#     # This only runs if the loop searched every file and found nothing
+#     print(f"Error: {search_file} is not in the repository.")
+
+
+
+
+
